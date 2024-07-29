@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Voice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sticky Voice</h1>
+        <p>This is your pocket journal.<br/>Say, Save and Listen To Your Thoughts. <br/>Record as you go.</p>
+        <div class="recorder">
+            <button id="recordButton">Start Recording</button>
+            <button id="pauseButton" disabled>Pause Recording</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+            <div id="recordingIndicator" style="display: none;">Recording... <span id="recordingTime">0:00</span></div>
+        </div>
+        <div class="transcription">
+            <h2>Transcription</h2>
+            <p id="transcriptText"></p>
+        </div>
+        <div class="entries">
+            <h2>Journal Entries</h2>
+            <ul id="entriesList"></ul>
+        </div>
+    </div>
+    <script src="journal.js"></script>
+</body>
+</html>
